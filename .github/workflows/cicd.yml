@@ -29,6 +29,6 @@ jobs:
 		  -Dsonar.sources=lib/
 		  -Dsonar.tests=tests/
 		  -Dsonar.verbose=true
-	  env:
+      env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-		GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+	GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
