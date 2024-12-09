@@ -21,14 +21,14 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarcloud-github-action@<action version> # Ex: v4.0.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
       with:
-		scannerVersion: 6.2.0.4584
-		projectBaseDir: MyWebApp/src
-		args: >
-		  -Dsonar.organization=afzalanwar
-                  -Dsonar.projectKey=afzalanwar_SonarQube1
-		  -Dsonar.sources=lib/
-		  -Dsonar.tests=tests/
-		  -Dsonar.verbose=true
+         scannerVersion: 6.2.0.4584
+	 projectBaseDir: MyWebApp/src
+	 args: >
+          -Dsonar.organization=afzalanwar
+	  -Dsonar.projectKey=afzalanwar_SonarQube1
+          -Dsonar.sources=lib/
+	  -Dsonar.tests=tests/
+          -Dsonar.verbose=true
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 	GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
