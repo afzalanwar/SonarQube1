@@ -26,8 +26,8 @@ jobs:
          args: >
           -Dsonar.organization=afzalanwar
           -Dsonar.projectKey=afzalanwar_SonarQube1
-          -Dsonar.sources=lib/
-          -Dsonar.tests=tests/
+          -Dsonar.sources=.
+          #-Dsonar.tests=tests/
           -Dsonar.verbose=true
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
