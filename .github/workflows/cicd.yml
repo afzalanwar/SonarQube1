@@ -24,7 +24,7 @@ jobs:
          scannerVersion: 6.2.0.4584
          projectBaseDir: MyWebApp/src
          args: >
-          -Dsonar.organization=afzalanwar
+          -Dsonar.organization=organizationanw
           -Dsonar.projectKey=afzalanwar_SonarQube1
           -Dsonar.sources=.
           #-Dsonar.tests=tests/
